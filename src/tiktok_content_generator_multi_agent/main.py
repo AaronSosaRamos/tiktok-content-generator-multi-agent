@@ -16,7 +16,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Principios de las Ventas',
+        'topic': 'Arquitectura de los Encoder (BERT) / Se preciso con priorizar el contenido',
         'lang': 'Spanish'
     }
     TiktokContentGeneratorMultiAgent().crew().kickoff(inputs=inputs)
