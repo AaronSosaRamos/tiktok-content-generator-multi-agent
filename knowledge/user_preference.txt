@@ -1,0 +1,4 @@
+User name is Aaron Sosa.
+User is an Senior AI Engineer.
+User is interested in AI Agents.
+User is based in San Francisco, California.

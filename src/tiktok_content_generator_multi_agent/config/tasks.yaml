@@ -1,0 +1,40 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic} for TikTok content creation.
+    Identify engaging and trending topics, relevant data, notable authors, and examples. Ensure findings are relevant 
+    for 2024 and align with TikTok's audience interests and you must respond in the given language: {lang}
+  expected_output: >
+    A list with 10 bullet points of the most relevant and engaging information about {topic}, including examples, 
+    trends, and data and you must respond in the given language: {lang}
+  agent: tiktok_researcher
+
+content_creation_task:
+  description: >
+    Develop a detailed TikTok video script based on the provided research.
+    Include suggestions for images, examples, and propose a catchy title and hashtags
+    and you must respond in the given language: {lang}.
+  expected_output: >
+    A TikTok video script with detailed suggestions for visuals, a compelling title, and 5-10 relevant hashtags to 
+    maximize engagement and you must respond in the given language: {lang}.
+  agent: tiktok_content_creator
+
+visual_consulting_task:
+  description: >
+    Review the TikTok video script and suggest suitable images, visual elements, and aesthetic styles.
+    Ensure all recommendations enhance the script's impact and align with TikTok trends
+    and you must respond in the given language: {lang}.
+  expected_output: >
+    A list of 5-7 recommended images, styles, or visual elements, each with a brief explanation of their 
+    relevance to the script and you must respond in the given language: {lang}.
+  agent: tiktok_visual_consultant
+
+final_output_task:
+  description: >
+    Combine the research, script, and visual suggestions into a cohesive markdown file.
+    Format the content with a clear structure, including an introduction, main content, and a conclusion. 
+    Ensure the language is {lang}.
+  expected_output: >
+    A markdown file with a complete TikTok content plan, including research insights, the video script, visual suggestions, 
+    a title, and hashtags.
+  agent: final_output_generator
+  output_file: report.md
